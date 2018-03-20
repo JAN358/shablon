@@ -1,0 +1,797 @@
+//text align
+.fontl {
+    font-family: fontl, sans-serif;
+}
+
+.fontr {
+    font-family: fontr, sans-serif;
+}
+
+.fontm {
+    font-family: fontm, sans-serif;
+}
+
+.fontb {
+    font-family: fontb, sans-serif;
+}
+
+
+
+/*-add class-*/
+
+.rel {
+    position: relative;
+}
+
+.bword {
+    text-transform: uppercase;
+}
+
+.mword {
+    text-transform: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.mauto {
+    margin: auto;
+}
+
+.m0auto {
+    margin: 0 auto;
+}
+
+.hid {
+    visibility: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.abs {
+    position: absolute;
+}
+
+.rel {
+    position: relative;
+}
+
+.fix {
+    position: fixed;
+}
+
+.overhid {
+    overflow: hidden;
+}
+
+.color1 {
+    color: @color1;
+}
+
+.color2 {
+    color: @color2;
+}
+
+.color3 {
+    color: @color3;
+}
+
+.color4 {
+    color: @color4;
+}
+
+.color5 {
+    color: @color5;
+}
+
+.white {
+    color: @white;
+}
+
+.greydb {
+    color: @greydb;
+}
+
+.grey66 {
+    color: @grey66;
+}
+
+.grey99 {
+    color: @grey99;
+}
+
+.grey32 {
+    color: @grey32;
+}
+
+.black {
+    color: @black;
+}
+
+a.color1:hover {
+    color: darken(@color1, 10%);
+}
+
+a.color2:hover {
+    color: darken(@color2, 10%);
+}
+
+a.color3:hover {
+    color: darken(@color3, 10%);
+}
+
+a.color4:hover {
+    color: darken(@color4, 10%);
+}
+
+a.color5:hover {
+    color: darken(@color5, 10%);
+}
+
+a.white:hover {
+    color: @white;
+}
+
+a.greydb:hover {
+    color: @greydb + #222222;
+}
+
+a.grey66:hover {
+    color: @grey66 + #222222;
+}
+
+a.grey9:hover {
+    color: @grey99 + #222222;
+}
+
+a.grey32:hover {
+    color: @grey32 + #222222;
+}
+
+a.black:hover {
+    color: lighten(@black, 10%);
+}
+
+a.color1:focus {
+    color: darken(@color1, 20%);
+}
+
+a.color2:focus {
+    color: darken(@color1, 20%);
+}
+
+a.color3:focus {
+    color: @color3 + #444444;
+}
+
+a.color4:focus {
+    color: @color4 + #444444;
+}
+
+a.color5:focus {
+    color: @color5 + #444444;
+}
+
+a.white:focus {
+    color: @white;
+}
+
+a.greydb:focus {
+    color: @greydb + #444444;
+}
+
+a.grey66:focus {
+    color: @grey66 + #444444;
+}
+
+a.grey9:focus {
+    color: @grey99 + #444444;
+}
+
+a.grey32:focus {
+    color: @grey32 + #444444;
+}
+
+a.black:focus {
+    color: lighten(@black, 20%);
+}
+
+a.addcolor1:hover {
+    color: @color1;
+}
+
+a.addcolor2:hover {
+    color: @color2;
+}
+
+a.addcolor3:hover {
+    color: @color3;
+}
+
+a.addcolor4:hover {
+    color: @color4;
+}
+
+a.addcolor5:hover {
+    color: @color5;
+}
+
+a.addwhite:hover {
+    color: @white;
+}
+
+a.addgreydb:hover {
+    color: @greydb;
+}
+
+a.addgrey66:hover {
+    color: @grey66;
+}
+
+a.addgrey9:hover {
+    color: @grey99;
+}
+
+a.addgrey32:hover {
+    color: @grey32;
+}
+
+a.addblack:hover {
+    color: @black;
+}
+
+a.noneline {
+    text-decoration: none;
+}
+
+a.noneline:hover {
+    text-decoration: none;
+}
+
+a.noneline01 {
+    text-decoration: none;
+}
+
+a.noneline01:hover {
+    text-decoration: underline;
+}
+
+a.noneline10 {
+    text-decoration: underline;
+}
+
+a.noneline10:hover {
+    text-decoration: none;
+}
+
+.color1bg {
+    background-color: @color1;
+}
+
+.color2bg {
+    background-color: @color2;
+}
+
+.color3bg {
+    background-color: @color3;
+}
+
+.color4bg {
+    background-color: @color4;
+}
+
+.color5bg {
+    background-color: @color5;
+}
+
+.btn-color1 {
+    .gradient(@color1, darken(@color1, 5%));
+    border-color: darken(@color1, 5%);
+    color: @white;
+}
+
+.btn-color1:hover {
+    .gradient(darken(@color1, 10%), darken(@color1, 5%));
+    color: @white;
+}
+
+.btn-color1:active {
+    .gradient(darken(@color1, 15%), darken(@color1, 15%));
+    color: @white;
+}
+
+.btn-color2 {
+    .gradient(@color2, darken(@color2, 5%));
+    border-color: darken(@color2, 5%);
+    color: @white;
+}
+
+.btn-color2:hover {
+    .gradient(darken(@color2, 10%), darken(@color2, 5%));
+    color: @white;
+}
+
+.btn-color2:active {
+    .gradient(darken(@color2, 15%), darken(@color2, 15%));
+    color: @white;
+}
+
+.lh1 {
+    line-height: 1;
+}
+
+.lh1i5 {
+    line-height: 1.5;
+}
+
+.lh2 {
+    line-height: 2;
+}
+
+.ls0 {
+    letter-spacing: 0px;
+}
+
+.ls1 {
+    letter-spacing: 1px;
+}
+
+.ls1i5 {
+    letter-spacing: 1.5px;
+}
+
+.ls2 {
+    letter-spacing: 2px;
+}
+
+.ls3 {
+    letter-spacing: 3px;
+}
+
+.ls4 {
+    letter-spacing: 4px;
+}
+
+.ls5 {
+    letter-spacing: 5px;
+}
+
+.ls6 {
+    letter-spacing: 6px;
+}
+
+.ls8 {
+    letter-spacing: 8px;
+}
+
+.op10 {
+    .opacity(1);
+}
+
+.op9 {
+    .opacity(0.9);
+}
+
+.op8 {
+    .opacity(0.8);
+}
+
+.op7 {
+    .opacity(0.7);
+}
+
+.op6 {
+    .opacity(0.6);
+}
+
+.op5 {
+    .opacity(0.5);
+}
+
+.op4 {
+    .opacity(0.4);
+}
+
+.op3 {
+    .opacity(0.3);
+}
+
+.op2 {
+    .opacity(0.2);
+}
+
+.op1 {
+    .opacity(0.1);
+}
+
+.op0 {
+    .opacity(0);
+}
+
+.none990 {
+    display: block;
+}
+
+.block990 {
+    display: none;
+}
+
+.text-right900c {
+    text-align: right;
+}
+
+.text-left900c {
+    text-align: left;
+}
+
+.fs10 {
+    font-size: 10px;
+}
+
+.fs12 {
+    font-size: 12px;
+}
+
+.fs16 {
+    font-size: 16px;
+}
+
+.fs18 {
+    font-size: 18px;
+}
+
+.fs20 {
+    font-size: 20px;
+}
+
+.fs22 {
+    font-size: 22px;
+}
+
+.fs24 {
+    font-size: 24px;
+}
+
+.fs25 {
+    font-size: 25px;
+}
+
+.fs26 {
+    font-size: 26px;
+}
+
+.fs28 {
+    font-size: 28px;
+}
+
+.fs30 {
+    font-size: 30px;
+}
+
+.fs32 {
+    font-size: 32px;
+}
+
+.fs34 {
+    font-size: 34px;
+}
+
+.fs36 {
+    font-size: 36px;
+}
+
+.fs40 {
+    font-size: 40px;
+}
+
+.fs42 {
+    font-size: 42px;
+}
+
+.fs46 {
+    font-size: 46px;
+}
+
+.fs50 {
+    font-size: 50px;
+}
+
+.fs52 {
+    font-size: 52px;
+}
+
+.fs68 {
+    font-size: 68px;
+}
+
+.fs96 {
+    font-size: 96px;
+}
+
+.void5 {
+    height: 5px;
+}
+
+.void10 {
+    height: 10px;
+}
+
+.void20 {
+    height: 20px;
+}
+
+.void50 {
+    height: 50px;
+}
+
+.void80 {
+    height: 80px;
+}
+
+.void100 {
+    height: 100px;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.p0 {
+    padding: 0;
+}
+
+.mt4 {
+    margin-top: 4px;
+}
+
+.mb4 {
+    margin-bottom: 4px;
+}
+
+.mv4 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.pt4 {
+    padding-top: 4px;
+}
+
+.pb4 {
+    padding-bottom: 4px;
+}
+
+.pv4 {
+    padding-top: 4px;
+    margin-bottom: 4px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mv10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pt10 {
+    padding-top: 10px;
+}
+
+.pb10 {
+    padding-bottom: 10px;
+}
+
+.pv10 {
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mv15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.pt15 {
+    padding-top: 15px;
+}
+
+.pb15 {
+    padding-bottom: 15px;
+}
+
+.pv15 {
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mt18 {
+    margin-top: 18px;
+}
+
+.mb18 {
+    margin-bottom: 18px;
+}
+
+.mv18 {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.pt18 {
+    padding-top: 18px;
+}
+
+.pb18 {
+    padding-bottom: 18px;
+}
+
+.pv18 {
+    padding-top: 18px;
+    margin-bottom: 18px;
+}
+
+.mt25 {
+    margin-top: 25px;
+}
+
+.mb25 {
+    margin-bottom: 25px;
+}
+
+.mv25 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.pt25 {
+    padding-top: 25px;
+}
+
+.pb25 {
+    padding-bottom: 25px;
+}
+
+.pv25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mv30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pt30 {
+    padding-top: 30px;
+}
+
+.pb30 {
+    padding-bottom: 30px;
+}
+
+.pv30 {
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.mt60 {
+    margin-top: 60px;
+}
+
+.mb60 {
+    margin-bottom: 60px;
+}
+
+.mv60 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.pt60 {
+    padding-top: 60px;
+}
+
+.pb60 {
+    padding-bottom: 60px;
+}
+
+.pv60 {
+    padding-top: 60px;
+    margin-bottom: 60px;
+}
+
+.mt100 {
+    margin-top: 100px;
+}
+
+.mb100 {
+    margin-bottom: 100px;
+}
+
+.mv100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.pt100 {
+    padding-top: 100px;
+}
+
+.pb100 {
+    padding-bottom: 100px;
+}
+
+.pv100 {
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+//list
+.ul-unstyled {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+//rows
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row.no-gutters>[class^="col-"],
+.row.no-gutters>[class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media screen and (max-width: 990px) {
+    .block990{
+        display: block;
+    }
+}
